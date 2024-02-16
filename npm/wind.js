@@ -11,3 +11,7 @@ if (parameters[0] === undefined) {
 }
 
 const mode = parameters[0].includes("-") ? parameters[0] : null;
+
+const inputFile = parameters[0].includes("-") ? parameters[1] : parameters[0];
+
+
