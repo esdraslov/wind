@@ -1,0 +1,22 @@
+{
+  "name": "wind",
+  "version": "1.0.0",
+  "description": "A new way to program",
+  "main": "wind.js",
+  "scripts": {
+    "test": "wind"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esdraslov/wind.git"
+  },
+  "keywords": [
+    "wind"
+  ],
+  "author": "esdraslov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/esdraslov/wind/issues"
+  },
+  "homepage": "https://github.com/esdraslov/wind#readme"
+}
