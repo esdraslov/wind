@@ -1,6 +1,6 @@
 # Wind
 
-a new way to program websites
+a new way to program
 
 # Installation
 
