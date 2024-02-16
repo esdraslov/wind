@@ -9,3 +9,5 @@ if (parameters[0] === undefined) {
 } else if (parameters[1] === undefined && (parameters[0].includes('-') && parameters[0] !== "--open")) {
     throw new Error('Missing parameter: input file');
 }
+
+const mode = parameters[0].includes("-") ? parameters[0] : null;
