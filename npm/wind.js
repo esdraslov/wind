@@ -1,4 +1,5 @@
 let { exec } = require("child_process")
+let fs = require("fs")
 
 let parameters = process.argv.slice(2);
 
@@ -25,7 +26,14 @@ if (mode === "--open") {
         }
     });
 } else if (!mode) {
-    // after
+    // compile the wind code to node.js
+    fs.readFile(inputFile, "utf8", (err, data) => {
+        if (err) {
+            throw new Error(`readFile error: ${err}`);
+        } else {
+            console.log(data);
+        }
+    })
 } else if (mode === "--server") {
     // after
 } else if (!mode && parameters[2] === "--wvm") {
