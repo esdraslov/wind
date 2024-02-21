@@ -31,7 +31,14 @@ if (mode === "--open") {
         if (err) {
             throw new Error(`readFile error: ${err}`);
         } else {
-            console.log(data);
+            //console.log(data);
+            fs.writeFile(`${inputFile}.js`, data, (err) => {
+                if (err) {
+                    throw new Error(`compile error: ${err}`);
+                } else {
+                    console.log(`compiled\n${inputFile}`);
+                }
+            }
         }
     })
 } else if (mode === "--server") {
